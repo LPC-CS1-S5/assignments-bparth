@@ -23,6 +23,9 @@ int main(){
   double sum = a+b+c+d+e;
   double avg = (sum)/5;
 
-  cout << sum <<endl;
+  cout.setf(ios::fixed,ios::floatfield);
+  cout.precision(3);
+  cout << sum << endl;
+  //cout << setprecision(3)<<sum <<endl;
   cout << avg <<endl; 
 }
