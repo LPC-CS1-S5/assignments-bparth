@@ -21,5 +21,5 @@ int main(){
   cout << "Cost of meal before tax: " << bill <<endl;
   cout << "Cost of meal after tax: " << billAfterTax <<endl;
   cout << "Cost of tip: " << tipGiven <<endl;
-  cout << "Total cost of meal is: "<< billWithTip << endl;
+  cout << "Total cost of meal with tip: "<< billWithTip << endl;
 }
