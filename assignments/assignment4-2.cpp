@@ -18,8 +18,7 @@ num3 = rand() % 100;
 
 cout << "Your three random numbers are: " << num1 <<" "<<num2<<" "<<num3 <<endl;
 
-// compare the numbers 
-
+// compare the numbers to find the miniume number, compares 1 and 2 first then sets one of them as the minmum. then compares the minimum to the last number and changes the minimum if necessary
 
 if(num1 < num2){
   min = num1;
@@ -30,6 +29,7 @@ if(num3 < min){
   min = num3;
 }
 
+// compare the numbers to find the max number, compares 1 and 2 first then sets one of them as the max. then compares the max to the last number and changes the max if necessary
 if(num1 > num2){
   max = num1;
 }else{
@@ -39,6 +39,7 @@ if(num3 > max){
   max = num3;
 }
 
+// finds the middle number by comparing all the numbers
 if((num1 < num2 && num2 < num3) || (num3< num2 && num2 < num1)){
   mid= num2; 
 }else if ((num2 < num1 && num1< num3) || (num3 < num1 && num1 < num2)){
