@@ -10,6 +10,8 @@ int main(){
 
 // cout <<"Enter 4 diff numbers: " << endl;
 // cin>> num1 >> num2>> num3 >> num4; 
+
+//generates random four numbers 
 srand(time(NULL));
 num1 = rand() % 100;
 num2 = rand() % 100;
