@@ -23,57 +23,57 @@ int main(){
   cin>> choice;
 
   //makes sure that the user is giving a number under 5 to choose a proper choice
-if(choice <= 4){ 
+	if(choice <= 4){ 
 
-  // #1 is the area of a circle, this calculates that!
-  if(choice == 1){
-    cout<< "What's the radius?"<<endl;
-    cin>> radius;
-    if(radius >0){
-      area = pi * (radius* radius);
-      cout<<fixed<<setprecision(3)<< "the area of your circle is: " << area<<endl;
-      
-    }else{
-      cout<<"please enter a positive number";
-      return(0);
-    }
-  }
+		// #1 is the area of a circle, this calculates that!
+		if(choice == 1){
+			cout<< "What's the radius?"<<endl;
+			cin>> radius;
+			if(radius >0){
+			area = pi * (radius* radius);
+			cout<<fixed<<setprecision(3)<< "the area of your circle is: " << area<<endl;
+			
+			}else{
+			cout<<"please enter a positive number";
+			return(0);
+			}
+		}
 
-  // calculates the area of the rectangle
-  if(choice == 2){
-    cout<< "What's the length and the width of the rectangle?"<<endl;
-    cin>> length>>width;
-    if(length >0 && width>0){
-      area = (length* width);
-      cout<<fixed<<setprecision(3)<< "the area of your rectangle is: " << area<<endl;
-      
-    }else{
-      cout<<"please enter a positive number";
-      return(0);
-    }
-  }
+		// calculates the area of the rectangle
+		if(choice == 2){
+			cout<< "What's the length and the width of the rectangle?"<<endl;
+			cin>> length>>width;
+			if(length >0 && width>0){
+			area = (length* width);
+			cout<<fixed<<setprecision(3)<< "the area of your rectangle is: " << area<<endl;
+			
+			}else{
+			cout<<"please enter a positive number";
+			return(0);
+			}
+		}
 
-  //claculates the area of a triangle
-  if(choice == 3){
-    cout<< "What's the base and the height of your triangle?"<<endl;
-    cin>> base>>height;
-    if(base >0 && height>0){
-      area = 0.5 * (base* height);
-      cout<<fixed<<setprecision(3)<< "the area of your triangle is: " << area<<endl;
-      
-    }else{
-      cout<<"please enter a positive number";
-      return(0);
-    }
-  }
+		//claculates the area of a triangle
+		if(choice == 3){
+			cout<< "What's the base and the height of your triangle?"<<endl;
+			cin>> base>>height;
+			if(base >0 && height>0){
+			area = 0.5 * (base* height);
+			cout<<fixed<<setprecision(3)<< "the area of your triangle is: " << area<<endl;
+			
+			}else{
+			cout<<"please enter a positive number";
+			return(0);
+			}
+		}
 
-  //exits the program for you and tells you to have fun lol.
-  if(choice == 4){
-    cout<<"Have fun bud!"<<endl;
-    return(0);
-  }
-} else{
-  cout<<"Enter a number less than 5!!!!"<<endl;
-  return(0);
-}
+		//exits the program for you and tells you to have fun lol.
+		if(choice == 4){
+			cout<<"Have fun bud!"<<endl;
+			return(0);
+		}
+	} else{
+		cout<<"Enter a number less than 5!!!!"<<endl;
+		return(0);
+	}
 }

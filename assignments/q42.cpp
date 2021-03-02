@@ -28,41 +28,49 @@ if(weight > 0 && weight <= 20 && miles >10 && miles <= 3000){
   //calculates the rate for boxes under 2,6,10,20 kg and so on.
   if(weight <= 2){
     if(miles < 500){
-      rate = p1* miles;
-    cout<< "your rate is: "<< rate << " \n" << "Weight is: "  << weight << " \n"<< "Miles is: " << miles << endl;
-  }else{
-    //rate for the box if over 500 miles
-    rate = (miles/500)*p1;
-    cout<< "your rate is: "<< rate << " \n" << "Weight is: "  << weight << " \n"<< "Miles is: " << miles << endl;
-    }
-  }else if(weight <= 6){
-    if(miles < 500){
-      rate = p2* miles;
-    cout<< "your rate is: "<< rate << " \n" << "Weight is: "  << weight << " \n"<< "Miles is: " << miles << endl;
-  }else{
-    rate = (miles/500)*p2;
-    cout<< "your rate is: "<< rate << " \n" << "Weight is: "  << weight << " \n"<< "Miles is: " << miles << endl;
+		rate = p1* miles;
+		// rate = p1;
+		cout<< "your rate is: "<< rate << " \n" << "Weight is: "  << weight << " \n"<< "Miles is: " << miles << endl;
+  	}else{
+		//rate for the box if over 500 miles
+		// rate = p1;
+		rate = (miles/500)*p1;
+		cout<< "your rate is: "<< rate << " \n" << "Weight is: "  << weight << " \n"<< "Miles is: " << miles << endl;
+	}
   }
-  }else if(weight <= 10){
-    if(miles < 500){
-      rate = p3* miles;
-    cout<< "your rate is: "<< rate << " " << "Weight is: "  << weight << " "<< "Miles is: " << miles << endl;
-  }else{
-    rate = (miles/500)*p3;
-    cout<< "your rate is: "<< rate << " \n" << "Weight is: "  << weight << " \n"<< "Miles is: " << miles << endl;
+  else if(weight <= 6){
+		if(miles < 500){
+		// rate = p2;
+		rate = p2* miles;
+		cout<< "your rate is: "<< rate << " \n" << "Weight is: "  << weight << " \n"<< "Miles is: " << miles << endl;
+	}else{
+		// rate = p2;
+		rate = (miles/500)*p2;
+		cout<< "your rate is: "<< rate << " \n" << "Weight is: "  << weight << " \n"<< "Miles is: " << miles << endl;
+	}
   }
-  }else {
+  else if(weight <= 10){
+		if(miles < 500){
+		// rate = p3;
+		rate = p3* miles;
+		cout<< "your rate is: "<< rate << " " << "Weight is: "  << weight << " "<< "Miles is: " << miles << endl;
+	}else{
+		rate = (miles/500)*p3;
+		cout<< "your rate is: "<< rate << " \n" << "Weight is: "  << weight << " \n"<< "Miles is: " << miles << endl;
+	}
+  }
+  else {
     if(miles < 500){
-      rate = p4*miles;
-    cout<< "your rate is: "<< rate << " \n" << "Weight is: "  << weight << " \n"<< "Miles is: " << miles << endl;
+		rate = p4*miles;
+		cout<< "your rate is: "<< rate << " \n" << "Weight is: "  << weight << " \n"<< "Miles is: " << miles << endl;
     }else{
-      rate = (miles/500)*p4;
-    cout<< "your rate is: "<< rate << " \n" << "Weight is: "  << weight << " \n"<< "Miles is: " << miles << endl;
+		rate = (miles/500)*p4;
+		cout<< "your rate is: "<< rate << " \n" << "Weight is: "  << weight << " \n"<< "Miles is: " << miles << endl;
     }
 
   }
-}else{
 
+}else{
   //tells the user this warning that the number they put in was invalid. 
   cout<< "Enter a weight less than 20 kg and greater than 0kg. And make sure your distance is under 3000 miles and over 10 miles"<<endl;
   exit(0); 
