@@ -43,3 +43,4 @@ int main(){
 
 
 }
+//I had a hard time comparing all the values to find the min, because often i would just get 0 as the answer, then i figured out how to do it after trial and error of the comparisons. 
