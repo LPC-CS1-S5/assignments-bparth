@@ -7,9 +7,15 @@ using namespace std;
 
 int main()
 {
-    ifstream ifs;
-    double num1, num2, sum, avg;
-    ifs.open("516Parth.txt");
+  ifstream ifs;
+  double num1, num2, sum, avg;
+  string str;
+  ifs.open("516Parth.txt");
 
+
+  while(ifs>>str){
+    cout<<str;
+  }
+  
 
 }

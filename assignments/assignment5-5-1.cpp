@@ -22,7 +22,7 @@ int main()
 
     for (int i = 1; i <= nStudents; i++)
     {
-        ofs<<nStudents<<endl;
+        //ofs<<nStudents<<endl;
         cout << "Enter the name of students:" << endl;
         cin >> sName;
         ofs << sName << " ";
