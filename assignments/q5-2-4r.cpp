@@ -9,7 +9,7 @@ int main(){
   ///makes all the required variables for the program
   ifstream ifs;
   double totSal, avgSal;
-  string data;
+  int data;
   //opens the required file
   ifs.open("employee.txt");
   if(ifs.fail()){
@@ -17,9 +17,9 @@ int main(){
     exit(0);
   }
 
-  total = 0
+  int total = 0;
 
-  for(int i = 0; i <= name; i++){
+  for(int i = 0; i <= data; i++){
 
   }
 }
