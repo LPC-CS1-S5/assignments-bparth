@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int evensumGet(int);
-int oddsumGet(int);
+int evensumGet(int &);
+int oddsumGet(int &);
 
 
 int main(){
@@ -25,15 +25,17 @@ int main(){
   
 }
 
-int evensumGet(int n){
-  int sum=0;
+int evensumGet(int &n){
+  int sum;
+  
   sum += n;
+  
   return(sum);
 }
-int oddsumGet(int n){
-  int sum=0;
+int oddsumGet(int &n){
+  int sum;
   
-    sum += n;
+  sum += n;
   
   return(sum);
 }
