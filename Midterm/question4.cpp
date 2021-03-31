@@ -16,7 +16,7 @@ int main(){
 int getRand(){
   int r=0;
   srand((unsigned)time(0));
-  r = rand() % 100;
+  r = (rand() % 100 ) + 1;
 }
 int getRand(int a){
   int r=0;
