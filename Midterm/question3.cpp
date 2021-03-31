@@ -25,7 +25,7 @@ int main(){
     if(j == 1){
       ofs<<rdnum<<endl;
     }
-    
+    i++;
   }
 }
 
@@ -37,7 +37,20 @@ int getRdnum(){
 }
 
 int isGreater(int &n){
+  static int prec = 0;
   int a, b; 
   a = n;
-  
+  if(prec ==0){
+    prec = n;
+    return(0);
+  }
+  if(prec < n){
+    
+    prec = n ;
+    return(1);
+  }else{
+    prec = n;
+    return(0);
+  }
+
 }
