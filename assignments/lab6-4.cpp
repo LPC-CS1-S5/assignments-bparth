@@ -8,7 +8,7 @@ int main(){
 
   int n, res;
   cout<<"Enter your numbers: "<<endl;
-  cin>> n;
+  cin>> n; // the number of numbers
 
   res = getsum(n);
 
