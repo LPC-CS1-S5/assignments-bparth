@@ -16,8 +16,18 @@ int main(){
     //just for the first number of the array 
     if(i ==0 && i+1 < 10){
       if(abs(number[i]-number[i+1])<10){
-        cout<< "At the index " << i<< "the number "<< number[i]<<" has the adjacents less than 10"<<endl;
+        cout<< "At the index " << i<< " the number "<< number[i]<<" has the adjacents less than 10"<<endl;
       }
+    }else if(i == N-1 && i>0){
+      // for the last 2 numbers of the array so that they can get compared
+
+      if (abs(number[i]-number[i-1])<10){
+        cout<< "At the index " << i<< " the number "<< number[i]<<" has the adjacents less than 10"<<endl;
+      }
+    }else if(abs(number[i]-number[i+1])<10 && abs(number[i]-number[i-1])<10){
+      // this condition compares ass the middle numbers 
+      cout<< "At the index " << i<< " the number "<< number[i]<<" has the adjacents less than 10"<<endl;
     }
-  } 
+  }
+  return 1; 
 }
