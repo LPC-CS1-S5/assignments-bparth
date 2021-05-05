@@ -33,12 +33,22 @@ void deleteone(vector<int> &vec)
 {
 
       int usernum;
-
+      cout<<"Enter the integer that you want to delete from the vector: ";
       cin >> usernum;
 
       // Your Code 
+      int deletecnt = count(vec.begin(), vec.end(), usernum);
+
+      vector<int> :: iterator iter = vec.begin();
+      while( iter != vec.end()){
+        if(*iter == usernum){
+          iter = vec.erase(iter);
+        }else{
+          iter++;
+        }
+      }
 
       cout << usernum << "is deleted " << deletecnt << " times \n";
- printvector(vec)
+ printvector(vec);
  
 }
