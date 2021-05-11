@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int countNum(string &, string&);
+int countNum(string &, string &);
 
 int main(){
 
@@ -12,10 +12,15 @@ int main(){
   string txt;
   ifstream ifs; 
   ifs.open("python.txt");
-  while(int i = 1000){
-  ifs>> txt;
-  i--;
+  while(1){
+    ifs>> txt;
+    if(ifs.eof()){
+      break;
+    }
+    cout<< txt;
   }
+  //ifs.close();
+  
   
   string pattern = "th";
 
