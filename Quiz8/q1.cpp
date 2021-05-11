@@ -8,16 +8,40 @@ int countNum(string &, string&);
 
 int main(){
 
-  
 
-  int txt;
-  int pattern;
+  string txt;
+  ifstream ifs; 
+  ifs.open("python.txt");
+  while(int i = 1000){
+  ifs>> txt;
+  i--;
+  }
+  
+  string pattern = "th";
+
+  cout<<countNum(pattern, txt)<<endl;
+  return 0;
+
 
 }
 
 int countNum(string &pattern,string &txt){
-  ifstream ifs; 
-  ifs.open("python.txt");
-
+  
   int M = pattern.length();
+  int N = txt.length();
+  int counter = 0;
+
+  for(int i =0; i = N - M;i++){
+    int j;
+    for(j = 0; j < M; j++){
+      if(txt[i+j] != pattern[j]){
+        break;
+      }
+    }
+    if(j == M){
+      counter++;
+      j=0;
+    }
+  }
+  return counter;
 }
