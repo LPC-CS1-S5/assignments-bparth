@@ -38,6 +38,7 @@ bool id(char mainEmail[]){
     return true;
   }else{
     cout<< "Sorry, have to start your email with letters!"<<endl;
+    return false;
   }
 }
 bool len(char mainEmail[]){
@@ -50,10 +51,31 @@ bool len(char mainEmail[]){
     return true;
   }else{
     cout<< "Not valid, try again!"<<endl;
+    return false;
   }
 
 }
 bool domain(char mainEmail[]){
   char domains[20] = "com edu gov net org";
+  int len = (strlen(mainEmail));
+
+  char *c;
+  int i = len-1;
+
+  do{
+    if(mainEmail[i]== '.'){
+      break;
+    }
+  }while((i--)>0);
+  c = (strstr(domains,mainEmail+i+1));
+  if(c){
+    return true;
+
+  }else{
+    cout<<"did not pass the proper domains test!"<<endl;
+    return false;
+  }
   
+
+
 }
