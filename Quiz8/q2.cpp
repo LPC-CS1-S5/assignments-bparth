@@ -27,18 +27,33 @@ int main(){
   }
 
   if(id(mainEmail)&&len(mainEmail)&&domain(mainEmail)){
-    "Nice your email id is perfect!"<<endl;
+    cout<<"Nice your email id is perfect!"<<endl;
   }else{
     cout<< "Sorry bruh you aint valid!"<<endl;
   }
 }
 
-bool id(char mainMail[]){
+bool id(char mainEmail[]){
+  if( isalpha(mainEmail[0])){
+    return true;
+  }else{
+    cout<< "Sorry, have to start your email with letters!"<<endl;
+  }
+}
+bool len(char mainEmail[]){
+  int i = 0;
+
+  while(mainEmail[i] != '@'){
+    i++;
+  }
+  if( (i > 5) && (i <15)){
+    return true;
+  }else{
+    cout<< "Not valid, try again!"<<endl;
+  }
 
 }
-bool len(char mainMail[]){
-
-}
-bool domain(char mainMail[]){
+bool domain(char mainEmail[]){
+  char domains[20] = "com edu gov net org";
   
 }
