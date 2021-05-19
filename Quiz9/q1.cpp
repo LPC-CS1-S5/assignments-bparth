@@ -60,13 +60,13 @@ void findDept(employee e[], int numRecords){
       printRecord(e[i]);
     }
   }
-}
+} // goes through the whole array to find matching items and if they match then it prints out the content of that array. this one finds the people who work in the computer department 
 
 void findSalary(employee e[], int numRecords){
   for(int i = 0; i<numRecords;i++){
     if(e[i].salary > 100000){
       cout<< "All the rich people are: "<<endl;
-      printRecord(e[i])
+      printRecord(e[i]);
     }
   }
 }
