@@ -26,6 +26,10 @@ employee e[50];
 numRecords = makeArray(e);
 cout<< "Total number of student records is: "<<numRecords<<endl;
 
+for(int i = 0; i < numRecords; i++){
+  printRecord(e[i]);
+}
+
 }
 
 int makeArray(employee e[]){
@@ -45,5 +49,5 @@ return i; // will serve the purpose to tell us how many employees there were in 
 }
 
 void printRecord(employee e){
-  cout
+  cout<< e.id << "\t"<<e.name << "\t"<<e.salary << "\t"<<e.dept <<"\t"<<e.month <<"\t"<<e.day <<"\t"<<e.year <<endl;
 }
