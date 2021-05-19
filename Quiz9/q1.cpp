@@ -24,12 +24,13 @@ string deptName, salary; //will be used later to find them
 employee e[50];
 
 numRecords = makeArray(e);
-cout<< "Total number of student records is: "<<numRecords<<endl;
+cout<< "Total number of student records is: "<<numRecords<<endl; //shows us how many lines there were in the text file
 
 for(int i = 0; i < numRecords; i++){
   printRecord(e[i]);
-}
-
+} //loops througth the array to print out each of the line
+findDept(e, numRecords);
+findSalary(e, numRecords);
 }
 
 int makeArray(employee e[]){
@@ -50,4 +51,22 @@ return i; // will serve the purpose to tell us how many employees there were in 
 
 void printRecord(employee e){
   cout<< e.id << "\t"<<e.name << "\t"<<e.salary << "\t"<<e.dept <<"\t"<<e.month <<"\t"<<e.day <<"\t"<<e.year <<endl;
+} // prints everything out
+
+void findDept(employee e[], int numRecords){
+  for(int i = 0; i<numRecords;i++){
+    if(e[i].dept == "Computer"){
+      cout<<"Computer guys are: "<<endl;
+      printRecord(e[i]);
+    }
+  }
+}
+
+void findSalary(employee e[], int numRecords){
+  for(int i = 0; i<numRecords;i++){
+    if(e[i].salary > 100000){
+      cout<< "All the rich people are: "<<endl;
+      printRecord(e[i])
+    }
+  }
 }
