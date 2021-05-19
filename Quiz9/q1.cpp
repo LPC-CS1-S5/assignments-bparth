@@ -21,6 +21,11 @@ void findSalary(employee [], int); // To find all the rich people
 int main(){
 int numRecords = 0; //we set the number of records from the text file to 0 for now will get updated later. 
 string deptName, salary; //will be used later to find them 
+employee e[50];
+
+numRecords = makeArray(e);
+cout<< "Total number of student records is: "<<numRecords<<endl;
+
 }
 
 int makeArray(employee e[]){
@@ -37,4 +42,8 @@ int makeArray(employee e[]){
     i++; 
   } // this basically loops through the whole list and adds the elements to the array. 
 return i; // will serve the purpose to tell us how many employees there were in the txt file. 
+}
+
+void printRecord(employee e){
+  cout
 }
