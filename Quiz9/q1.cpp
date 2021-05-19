@@ -19,7 +19,8 @@ void findDept(employee [], int); // to find all the boys in the computer departm
 void findSalary(employee [], int); // To find all the rich people
 
 int main(){
-
+int numRecords = 0; //we set the number of records from the text file to 0 for now will get updated later. 
+string deptName, salary; //will be used later to find them 
 }
 
 int makeArray(employee e[]){
@@ -35,5 +36,5 @@ int makeArray(employee e[]){
   while(ifs>>e[i].id>> e[i].name >> e[i].salary >> e[i].dept >> e[i].month >> e[i].day >> e[i].year){
     i++; 
   } // this basically loops through the whole list and adds the elements to the array. 
-
+return i; // will serve the purpose to tell us how many employees there were in the txt file. 
 }
