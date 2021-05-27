@@ -27,7 +27,7 @@ void findStr(string main, char find[]){
             }
         }
         if( j == n){
-            cout<<"The index is: "<<i+1<<endl;//after breaking from that previos loop it sees if this condition is true, then we have found the index
+            cout<<"The index where this matches is: "<<i+1<<endl;//after breaking from that previos loop it sees if this condition is true, then we have found the index
             
         }
     }
