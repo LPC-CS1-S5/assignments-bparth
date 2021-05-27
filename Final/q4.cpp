@@ -12,6 +12,8 @@ string  words= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quibus 
 cout << "Enter user string "; // gives out the terminal output to the user
 cin >> userinput; // sabse the user input into the char array made above.
 
+findStr(words, userinput);
+
 }
 
 void findStr(string main, char find[]){
@@ -25,13 +27,12 @@ void findStr(string main, char find[]){
       // loops througth the user inputed string in hopes of matching it with the bigger paragraph. 
       if(main[i+j] != find[j]){
         break; //this if statement goes through the array of the big paragraph and eertime it doesnt meet the condition it breaks out and goes to the following if statement
-      }
-      if(j == n ){
+    }
+    if(j == n ){
         cout<< "The index of matching string is: "<< i+1<<endl;
       } //after breaking from that previos loop it sees if this condition is true, then we have found the index
-
     }
   }
-
+  cout<< "Lol your string doesnt exist in the paragraph"<< endl; 
   
 }
