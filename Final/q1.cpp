@@ -10,7 +10,7 @@ int main() {
         const int N = 5;
         int numbers[N] = {15, 10, 30, 20, 5};
         bubble(numbers, N);
-        printout(numbers, N);
+        //printout(numbers, N);
 }
 void bubble(int numbers[], int last) {
         for (int i = 0; i < last - 1; i++) {
