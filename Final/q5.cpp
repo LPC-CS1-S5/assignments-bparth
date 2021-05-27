@@ -49,5 +49,16 @@ int main(){
   getline(s, l1, ',');
   g.score.grade;
 
-  
+  fstream f;
+  f.open("grades.bin", ios::out | ios::binary); //opens the binary file so we can write things into it I think. 
+
+  if(f.is_open()){
+    f.write(reinterpret_cast<char*>(&g), N*sizeof(Grade));
+    f.close();
+
+  }else{
+    cout<<"Error!!!"<<endl;
+  }
+
+
 }
