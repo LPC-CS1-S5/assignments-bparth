@@ -30,11 +30,14 @@ void findMaxSum(int result[], int num[][5], int rows, int cols) {
                         sum += num[i][j];
                 }
                 cout << "\tThe sum of row is :" << setw(5) << sum << endl;
-                if (i == 0)
-                        sumrow = sum;
-                else if (sumrow < sum)
-                        sumrow = sum;
-                idx = i;
+                if (i == 0){
+                  sumrow = sum;
+                }else if (sumrow < sum){
+                  sumrow = sum;
+                  idx = i;
+                }
+                sum = 0;
+                
         }
         for (int i = 0; i < cols; i++)
                 result[i] = num[idx][i];
