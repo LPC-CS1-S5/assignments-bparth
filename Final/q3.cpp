@@ -1,13 +1,19 @@
 
 #include <iostream>
 using namespace std; 
-bool isSame(int arr1[], int arr2[], int int);
+bool isSame(int arr1[], int arr2[], int ,int);
 
 int main(){
 const int SIZE1=10;
 const int SIZE2=5;
 int numbers2[SIZE2] = {2, 3, 5, 9, 10};
 int numbers1[SIZE1] = {1, 2, 3, 5, 9, 10, 11, 13, 15, 17};
+
+if(isSame(numbers1, numbers2, SIZE1, SIZE2)){
+  cout<< "Numebrs 2 array is included in the Numbers 1 array set!"<<endl;
+}else{
+  cout<<"The arrays dont match at all lol"<<endl;
+}//this calls the comparing fucntion that I made below and is a boolean so based on true/false it shows prints the statement result.
 
 }
 
